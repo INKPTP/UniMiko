@@ -3,8 +3,6 @@ import Backupv2
 import loading
 import ssh_connection_test
 import send_config_from_file
-# import Backup
-# import test
 
 loading.start()
  
