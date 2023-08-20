@@ -1,0 +1,10 @@
+interface loopback 99
+	ip add 9.9.9.9 255.255.255.255
+	no shut
+	exit
+vl 99 
+	name TEST-VLAN
+	exit
+line vty 0 4
+	transport input ssh telnet
+	end

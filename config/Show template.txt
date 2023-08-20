@@ -1,0 +1,16 @@
+show clock
+show version
+show inventory
+show run
+show switch
+show ip int bri
+show int status
+show int des
+show cdp nei
+show cdp nei detail
+show ether sum
+show spanning-tree summary
+show arp
+show mac address-table
+show logging
+show int description
