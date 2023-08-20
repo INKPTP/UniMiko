@@ -6,5 +6,3 @@ def start():
                 desc="Loading…",
                 ascii=False, ncols=75):
         sleep(0.01)
-        
-    print("")
