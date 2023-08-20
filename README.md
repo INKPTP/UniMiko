@@ -1,7 +1,7 @@
 # UniMiko
 Network Engineer tools by using Netmiko 
 <br />
-This project was developed to help engineer doing repeatly task in a few step.
+This project was developed to help engineer doing some repeatly task in a few step.
 <br />
 I hope this program will be help and useful  
 <br />
