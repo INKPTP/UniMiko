@@ -14,7 +14,7 @@ def status():
             try:
                 with ConnectHandler(**device) as net_connect:
                     print("\n----------"+device['host']+"---------")
-                    print(net_connect.find_prompt()+" is ready\n")
+                    print(net_connect.find_prompt()+" is ready")
             except:
                 print("\n"+device['host']+" not found\n")
     except:
