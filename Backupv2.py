@@ -36,7 +36,7 @@ def start():
                             hostname = prompt[0:-1]
                             
                             # print hostname and IP address
-                            print("\n"+hostname+" : "+ device['host']+"\n")
+                            print("\n"+hostname+" : "+ device['host']+"")
                             # Create {ip address}.txt file 
                             with open("{}.txt".format(device['host']), "w") as f:
                                 for command in command_list:
@@ -44,10 +44,10 @@ def start():
                                     f.writelines(hostname+"# "+command+"\n")
                                     # Write command output into file
                                     f.writelines(net_connect.send_command(command))
-                                print('Backup Successfully!!')          
-                        break
+                                print('Backup Success!!')          
                     except:
-                        print(device['host']+" - Backup fail")
+                        print("Backup fail")
+                break
             elif check_input == "N" or check_input == "n" or check_input == "":
                 print("Cancel backup\n")
                 time.sleep(3)

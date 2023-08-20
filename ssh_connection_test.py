@@ -9,7 +9,6 @@ def status():
         print("Fail to open file")
     
     try:    
-        print("\nStart testing")
         for device in select_file.inventory(Target_list):
             try:
                 with ConnectHandler(**device) as net_connect:
