@@ -1,7 +1,7 @@
 # UniMiko
 Network Engineer tools by using Netmiko 
 <br />
-This project was developed to help engineer doing some repeat tasks in a few steps.
+This project was developed to help engineer configure and backup multiple network devices in onces.
 <br />
 I hope this program will be help and useful  
 <br />
