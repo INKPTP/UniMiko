@@ -37,7 +37,7 @@ def start():
                             # Send config to network device
                             print("\n"+hostname+" : "+ device['host'])
                             result = net_connect.send_config_from_file(conf_file)
-                            print("Yeah!!\n")
+                            print("Yeah!!")
                             # Write memory
                             net_connect.save_config()
                     except:

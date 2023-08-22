@@ -15,6 +15,6 @@ def status():
                     print("\n----------"+device['host']+"---------")
                     print(net_connect.find_prompt()+" is ready")
             except:
-                print("\n"+device['host']+" not found\n")
+                print("\n"+device['host']+" not found")
     except:
         print("Go back to home page\n")
