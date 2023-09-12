@@ -1,16 +1,50 @@
+terminal length 0
 show clock
-show version
+show ver
 show inventory
 show run
-show switch
 show ip int bri
 show int status
 show int des
+show vlan 
+show vlan bri
+show int trunk
+show interfaces switchport
+show ip interface
+show interface
 show cdp nei
 show cdp nei detail
-show ether sum
-show spanning-tree summary
-show arp
+show ip traffic
+show protocol
+show hosts
+show int trans supported-list
+show etherchannel summary
+show ip route
+show ip route ospf
+show ip route | inc 0.0.0.0
+show ip cef
 show mac address-table
+show arp
+show spanning-tree sum
+show spanning-tree
+show spanning-tree root priority 
+show vtp status
+show vtp interface
+show vtp counter
+show boot
+show switch
+show module
+show process history
+show process cpu history
+show environment status
+show environment
+show power switch all
+show power inline 
+show license all
+show license status
+show license usage
+show license summary
+show license authorization
+dir /all
+show diagnostic status
 show logging
-show int description
