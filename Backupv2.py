@@ -41,7 +41,7 @@ def start():
                             with open("{}.txt".format(device['host']), "w") as f:
                                 for command in command_list:
                                     # Write {device name}# {command} into file
-                                    f.writelines(hostname+"# "+command+"\n")
+                                    f.writelines("\n"+hostname+"# "+command+"\n")
                                     # Write command output into file
                                     f.writelines(net_connect.send_command(command))
                                 print('Backup Success!!')          
