@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(
-    ['UniMiko.py'],
+    ['Unimiko.py'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -26,7 +26,7 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name='UniMiko',
+    name='Unimiko',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -48,5 +48,5 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name='UniMiko',
+    name='Unimiko',
 )
