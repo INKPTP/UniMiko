@@ -20,16 +20,17 @@ This project was developed to help engineer configure and backup multiple networ
 ```
 Loading…: 100%|██████████████████████████| 101/101 [00:01<00:00, 95.89it/s]
 
-#################################################
--------------------------------------------------
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!       Welcone to UniMiko     !!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
--------------------------------------------------
-#################################################
+ █████  █████             ███  ██████   ██████  ███  █████
+░░███  ░░███             ░░░  ░░██████ ██████  ░░░  ░░███
+ ░███   ░███  ████████   ████  ░███░█████░███  ████  ░███ █████  ██████
+ ░███   ░███ ░░███░░███ ░░███  ░███░░███ ░███ ░░███  ░███░░███  ███░░███
+ ░███   ░███  ░███ ░███  ░███  ░███ ░░░  ░███  ░███  ░██████░  ░███ ░███
+ ░███   ░███  ░███ ░███  ░███  ░███      ░███  ░███  ░███░░███ ░███ ░███
+ ░░████████   ████ █████ █████ █████     █████ █████ ████ █████░░██████
+  ░░░░░░░░   ░░░░ ░░░░░ ░░░░░ ░░░░░     ░░░░░ ░░░░░ ░░░░ ░░░░░  ░░░░░░  V0.7
 
 Now UniMiko have features:
-1. Test SSH connection
+1. Test connection
 2. Add vlan
 3. Remove vlan
 4. Backup configuretion
@@ -46,6 +47,11 @@ Selected file: D:/UniMiko/IP_address_list_example.txt
 Username: admin
 Password:
 Enable password:
+
+          [1] SSH
+          [2] Telnet
+
+Remote by using: 1
 
 ----------192.168.159.100---------
 TEST# is ready
@@ -85,6 +91,11 @@ Post configure[y/n](n): y
 Username: admin
 Password:
 Enable password:
+
+          [1] SSH
+          [2] Telnet
+
+Remote by using: 1
 
 ----------TEST#---------
 
@@ -129,6 +140,11 @@ Username: admin
 Password:
 Enable password:
 
+          [1] SSH
+          [2] Telnet
+
+Remote by using: 1
+
 ----------TEST#---------
 
 ----------192.168.159.100---------
@@ -150,6 +166,11 @@ Selected file: D:/UniMiko/IP_address_list_example.txt
 Username: admin
 Password:
 Enable password:
+
+          [1] SSH
+          [2] Telnet
+
+Remote by using: 1
 
 --- List of target device ---
 192.168.159.100
@@ -202,6 +223,11 @@ Selected file: D:/UniMiko/IP_address_list_example.txt
 Username: admin
 Password:
 Enable password:
+
+          [1] SSH
+          [2] Telnet
+
+Remote by using: 1
 
 --- List of target device ---
 192.168.159.100
