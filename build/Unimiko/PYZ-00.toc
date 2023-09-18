@@ -1,5 +1,6 @@
-('D:\\UniMiko\\UniMiko\\build\\Unimiko\\PYZ-00.pyz',
+('D:\\UniMiko\\UniMiko\\build\\UniMiko\\PYZ-00.pyz',
  [('Backupv2', 'D:\\UniMiko\\UniMiko\\Backupv2.py', 'PYMODULE'),
+  ('Cisco_ios', 'D:\\UniMiko\\UniMiko\\Cisco_ios.py', 'PYMODULE'),
   ('__future__',
    'c:\\users\\user\\appdata\\local\\programs\\python\\python38\\lib\\__future__.py',
    'PYMODULE'),

@@ -16,16 +16,20 @@ while True:
  ░███   ░███  ░███ ░███  ░███  ░███ ░░░  ░███  ░███  ░██████░  ░███ ░███
  ░███   ░███  ░███ ░███  ░███  ░███      ░███  ░███  ░███░░███ ░███ ░███
  ░░████████   ████ █████ █████ █████     █████ █████ ████ █████░░██████ 
-  ░░░░░░░░   ░░░░ ░░░░░ ░░░░░ ░░░░░     ░░░░░ ░░░░░ ░░░░ ░░░░░  ░░░░░░  V0.7
-                                
+  ░░░░░░░░   ░░░░ ░░░░░ ░░░░░ ░░░░░     ░░░░░ ░░░░░ ░░░░ ░░░░░  ░░░░░░  V0.8                                
           """)
-    print("Now UniMiko have features:")
-    print("1. Test connection")
-    print("2. Add vlan")
-    print("3. Remove vlan")
-    print("4. Backup configuretion")
-    print("5. Send configure from .txt file")
-    print("\n99. Exit\n")
+    print("""
+ OS supported: 
+     - Cisco_ios
+     - Cisco_ios-xe
+     
+ Now UniMiko have features:
+     1. Test connection
+     2. Add vlan
+     3. Remove vlan
+     4. Backup configuretion
+     5. Send configure from .txt file
+     99. Exit """)
     
     while True:
         try:
