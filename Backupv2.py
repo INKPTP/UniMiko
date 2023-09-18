@@ -2,6 +2,23 @@ import time
 from netmiko import ConnectHandler 
 import select_file
 
+def backup(device,net_connect,command_list):
+    # device> Enable
+    net_connect.enable()
+    prompt = net_connect.find_prompt()
+    hostname = prompt[0:-1]
+    
+    # print hostname and IP address
+    print("\n"+hostname+" : "+ device['host']+"")
+    # Create {ip address}.txt file 
+    with open("{}.txt".format(device['host']), "w") as f:
+        for command in command_list:
+            # Write {device name}# {command} into file
+            f.writelines("\n"+hostname+"# "+command+"\n")
+            # Write command output into file
+            f.writelines(net_connect.send_command(command))
+        print('Backup Success!!')  
+       
 def start():
     try:
         # Get ip list from .txt file
@@ -28,25 +45,25 @@ def start():
             check_input = str(input("Start backup [y/n](n): "))
             if check_input == "Y" or check_input == "y":
                 for device in device_profiles:
+                    
                     try:
                         with ConnectHandler(**device) as net_connect:
-                            # device> Enable
-                            net_connect.enable()
-                            prompt = net_connect.find_prompt()
-                            hostname = prompt[0:-1]
-                            
-                            # print hostname and IP address
-                            print("\n"+hostname+" : "+ device['host']+"")
-                            # Create {ip address}.txt file 
-                            with open("{}.txt".format(device['host']), "w") as f:
-                                for command in command_list:
-                                    # Write {device name}# {command} into file
-                                    f.writelines("\n"+hostname+"# "+command+"\n")
-                                    # Write command output into file
-                                    f.writelines(net_connect.send_command(command))
-                                print('Backup Success!!')          
+                            backup(device,net_connect,command_list)     
+                            SSH_active = True                    
                     except:
                         print("Backup fail")
+                        SSH_active = False
+                        
+                    try:    
+                        if SSH_active == False:
+                            print("Trying telnet...")
+                            device["device_type"] = "cisco_ios_telnet"
+                            with ConnectHandler(**device) as net_connect:
+                                backup(device,net_connect,command_list)
+                    except: 
+                        print("Backup fail")
+                        SSH_active = False
+                        
                 break
             elif check_input == "N" or check_input == "n" or check_input == "":
                 print("Cancel backup\n")

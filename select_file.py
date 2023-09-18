@@ -33,37 +33,14 @@ def inventory(list):
     password = str(getpass("Password: "))
     secret = str(getpass("Enable password: "))
 
-    print("""
-          [1] SSH
-          [2] Telnet
-          """)
-    while True:
-        try:
-            protocol = int(input("Remote by using: "))
-            if protocol == 1:
-                for ip in list:
-                    device = {
-                        "device_type": "cisco_ios",
-                        "host": ip,
-                        "username": username,
-                        "password": password,
-                        "secret": secret  # Enable password
-                    }
-                    device_inventory.append(device)
-                break
-            if protocol == 2:
-                for ip in list:
-                    device = {
-                        "device_type": "cisco_ios_telnet",
-                        "host": ip,
-                        "username": username,
-                        "password": password,
-                        "secret": secret  # Enable password
-                    }
-                    device_inventory.append(device)
-                break
-            else:
-                continue
-        except:
-            print("% Please enter number only %")
+    for ip in list:
+        device = {
+            "device_type": "cisco_ios",
+            "host": ip,
+            "username": username,
+            "password": password,
+            "secret": secret  # Enable password
+            
+        }
+        device_inventory.append(device)
     return device_inventory

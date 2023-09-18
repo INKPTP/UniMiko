@@ -1,0 +1,1 @@
+protocols = ["cisco_ios","cisco_ios_telnet"]

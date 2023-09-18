@@ -65,7 +65,6 @@ def add():
                             print("")
                             # Write memory
                             net_connect.save_config()
-                            
                     except:
                         print(device['host'] + " fail")
                 break
@@ -132,8 +131,7 @@ def remove():
                             print(net_connect.send_command("sh vl br"))
                             print("")
                             # Write memory
-                            net_connect.save_config()
-                            
+                            net_connect.save_config()             
                     except:
                         print(device['host'] + " fail")
                 break
