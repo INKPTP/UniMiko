@@ -1,5 +1,7 @@
 # Update 10/2025
-This project was created when I was a network engineer in my first job. Now that I’m a network automation engineer, looking back at this code—it’s such a messy one, haha! This project is no longer being developed; I’m just keeping it as a nostalgic artifact.
+This project was created when I was a network engineer in my first job. 
+Now that I’m a network automation engineer, looking back at this code—it’s such a messy one, haha! 
+This project is no longer being developed; I’m just keeping it as a nostalgic artifact.
 
 # cisco-config-and-backup-tool-netmiko
 Tools for network Engineer by using Netmiko 
@@ -22,15 +24,6 @@ This project was developed to help engineer configure and backup multiple networ
 ### Main Menu
 ```
 Loading…: 100%|██████████████████████████| 101/101 [00:01<00:00, 95.89it/s]
-
- █████  █████             ███  ██████   ██████  ███  █████
-░░███  ░░███             ░░░  ░░██████ ██████  ░░░  ░░███
- ░███   ░███  ████████   ████  ░███░█████░███  ████  ░███ █████  ██████
- ░███   ░███ ░░███░░███ ░░███  ░███░░███ ░███ ░░███  ░███░░███  ███░░███
- ░███   ░███  ░███ ░███  ░███  ░███ ░░░  ░███  ░███  ░██████░  ░███ ░███
- ░███   ░███  ░███ ░███  ░███  ░███      ░███  ░███  ░███░░███ ░███ ░███
- ░░████████   ████ █████ █████ █████     █████ █████ ████ █████░░██████
-  ░░░░░░░░   ░░░░ ░░░░░ ░░░░░ ░░░░░     ░░░░░ ░░░░░ ░░░░ ░░░░░  ░░░░░░  V0.7
 
 Now UniMiko have features:
 1. Test connection
